@@ -1,11 +1,12 @@
 class Solution:
     def countOdds(self, low: int, high: int) -> int:
-        # Initialize odd with the number of even numbers between low and high.
-        odd = (high - low) // 2
+        od = (j-k)//2
+        if k % 2 == 1 or j % 2 == 1:
+            od += 1
+        return od
+        # c=0
+        # for i in range(k,j+1):
+        #     if i%2==1:
+        #         c+=1
+        # return c
         
-        # If either low or high is odd, increment odd by 1.
-        if low % 2 == 1 or high % 2 == 1:
-            odd += 1
-        
-        # Return the number of odd numbers between low and high.
-        return odd
